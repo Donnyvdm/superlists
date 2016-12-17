@@ -24,7 +24,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
             if cls.server_url == cls.live_server_url:
                 super().tearDownClass()
         except AttributeError:
-            print(cls.server_url)
+            pass
 
     def setUp(self):
         self.browser = webdriver.Firefox()
